@@ -4,6 +4,234 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #4891ff;
+  --light-color: #f4f4f6;
+  --dark-colr: #111;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Navbar*/
+.navbar {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+  color: #4891ff;
+}
+
+.navbar ul li a i {
+  margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+  margin-left: 10px;
+}
+
+/*hero*/
+.hero {
+  margin-bottom: 50px;
+}
+
+.hero .container{
+  height: 550px;
+  background: url("/Images/Images.png") no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+
+.hero .container .hero-text .heading {
+  width: 70%;
+}
+.hero .container .hero-text .text-para {
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+
+/*Video section*/
+.video {
+  padding: 10px 0 40px;
+}
+
+.video .video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video .video-preview {
+  margin-bottom: 20px;
+}
+
+
+
+/*Utility Classes*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-sm {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: var(--light-color);
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  color: var(--dark-color);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.btn-hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-dark {
+  background-color: var(--dark-color);
+  color: #fff;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.text-xxl {
+  font-size: 3rem;
+  font-weight: 600px;
+  line-height: 1.2;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  font-weight: normal;
+  line-height: 1.4;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 1.4;
+  margin: 20px 0 15px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  font-weight: normal;
+  line-height: 1.4;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 1.1 rem;
+  font-weight: normal;
+  line-height: 1.4;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-dark {
+  background-color: var(--dark-colr);
+}
+
+.bg-light {
+  background-color: var(--light-color);
+}
+
+
+.text-white {
+  color: var(--light-color);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: #ffffff;
@@ -60,20 +288,95 @@ ul {
 
 .btn-primary {
   background: var(--primary);
+  color: white;
 }
 
 .btn-dark {
-  background: var(--dark);
+  background-color: var(--dark);
   color: white;
 }
+
+
+.hero {
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.hero .hero-content {
+  max-width: 70%;
+}
+
+.hero-content p {
+  max-width: 70%;
+  margin: 20px 0;
+}
+
+
+.hero .container {
+  height: 550px;
+  background: url(/Images/Images.png);
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  
+}
+/*Video Section*/
+/*
+.video {
+  background: var(--dark);
+  color: white;
+  
+}
+
+.video-content {
+  display: flex;
+  
+  flex-direction: column;
+  
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.text {
+  padding: 20px;
+}
+
+.video-content img {
+  margin-bottom: 20px;
+}
+
+.testimonials {
+  background-color: var(--dark);
+  
+}
+.testimonial-content .cards {
+
+  display: flex;
+}
+
+
+.testimonial-content .heading {
+  width: 60%;
+  color: white;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgb(236, 226, 226);
+  padding: 20px;
+  margin: 0px 10px;
+  border-radius: 9px;
+}
 /*Utility Classes*/
+/*
 .text-xs {
   font-size: 0.75rem; /* Adjust as needed */
-}
+/*
 
 .text-sm {
   font-size: 0.875rem; /* Adjust as needed */
-}
+/*
 
 .text-md {
   font-size: 1rem;
@@ -84,7 +387,7 @@ ul {
 }
 
 .text-xl {
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 
 
@@ -118,3 +421,5 @@ i {
   margin: 0 auto;
   padding: 0 15px;
 }
+
+*/
