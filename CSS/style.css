@@ -70,7 +70,7 @@ img {
   margin-bottom: 50px;
 }
 
-.hero .container{
+.hero .container {
   height: 550px;
   background: url("/Images/Images.png") no-repeat;
   background-position: center bottom;
@@ -85,7 +85,6 @@ img {
   margin-bottom: 20px;
 }
 
-
 /*Video section*/
 .video {
   padding: 10px 0 40px;
@@ -95,7 +94,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
 .video-content a {
@@ -105,12 +103,9 @@ img {
   margin-bottom: 20px;
 }
 
-
-
 /*Testimonials*/
 .testimonials {
   padding: 30px 10px;
-
 }
 
 .testimonials-heading {
@@ -119,22 +114,18 @@ img {
 }
 
 .cards {
-
   display: flex;
   justify-content: space-between;
-
 }
 
 .card {
-  
   background-color: var(--light-color);
   color: var(--dark-colr);
   padding: 15px;
   margin: 20px;
   border-radius: 10px;
- overflow: auto;
- text-align: center;
-  
+  overflow: auto;
+  text-align: center;
 }
 
 /*Pricing Card*/
@@ -142,8 +133,6 @@ img {
   padding: 25px;
   margin: 40px;
   border-radius: 15px;
-  
-  
 }
 
 .card1text {
@@ -151,15 +140,14 @@ img {
 }
 
 .tick {
-margin: 20px 0;
-border-top: #111 solid 2px;
-padding-top: 20px;
-line-height: 30px;
+  margin: 20px 0;
+  border-top: #111 solid 2px;
+  padding-top: 20px;
+  line-height: 30px;
 }
 .tick i {
   margin-right: 10px;
 }
-
 
 .pricing-cards {
   display: flex;
@@ -226,19 +214,13 @@ line-height: 30px;
   color: #fff;
 }
 
-
-
-
 .footer {
   padding: 60px 0;
-height: 400px;
-display: flex;
-align-items: center;
-justify-content: space-around;
-
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-
-
 
 .footer-menu {
   display: flex;
@@ -246,18 +228,11 @@ justify-content: space-around;
   justify-content: space-around;
 }
 
-
-
 .footer .logo {
   background-color: var(--light-color);
   display: inline-block;
   margin-bottom: 20px;
 }
-
-
-
-
-
 
 .newsletter {
   background-color: var(--light-color);
@@ -267,13 +242,12 @@ justify-content: space-around;
   width: 20%;
 }
 
-
-.footer li a{
+.footer li a {
   color: white;
-margin-top: 20px;
+  margin-top: 20px;
 }
 
-.footer input[type='email'] {
+.footer input[type="email"] {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -281,10 +255,62 @@ margin-top: 20px;
   margin: 20px 0;
 }
 
-
 .contact {
   color: white;
 }
+
+
+/*Hambrurger button*/
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.hamburger-button .hamburger-line {
+  width: 30px;
+  height: 3px;
+  background: #333;
+  margin: 6px 0;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.mobile-menu ul {
+  margin-top: 100px;
+  padding-right: 10px;
+}
+
+.mobile-menu ul li {
+  margin: 10px 0;
+}
+
+.mobile-menu ul li a {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+
+
+
 
 
 
@@ -383,7 +409,7 @@ margin-top: 20px;
 }
 
 .bg-gray {
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
 }
 
 .text-white {
@@ -393,26 +419,75 @@ margin-top: 20px;
 
 
 
+@media (max-width: 960px) {
+  .text-xxl {
+    font-size: 2.5rem;
+  }
+}
 
+@media (max-width: 670px) {
+  .navbar .main-menu {
+    display: none;
+  }
 
+  .navbar .hamburger-button {
+    display: block;
+  }
 
+  .hero .container {
+    background: url('../images/hero-bg-mobile.png') no-repeat;
+    background-size: 350px 400px;
+    background-position: bottom;
+    height: 770px;
+  }
 
+  .hero .hero-content,
+  .hero .hero-text {
+    width: 100%;
+    text-align: center;
+  }
 
+  .hero .hero-buttons .btn {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+  }
 
+  .testimonials .testimonials-heading {
+    max-width: 100%;
+    text-align: center;
+  }
 
+  .testimonials .testimonials-grid,
+  .pricing .pricing-grid,
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+  }
 
+  .footer .card {
+    margin-right: 0;
+  }
 
+  .footer .footer-grid > div {
+    text-align: center;
+  }
 
+  /* Text */
+  .text-xl {
+    font-size: 1.9rem;
+  }
 
+  .text-lg {
+    font-size: 1.5rem;
+  }
 
+  .text-md {
+    font-size: 1.1rem;
+  }
+}
 
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 500px) {
+  .text-xxl {
+    font-size: 2rem;
+  }
+}
