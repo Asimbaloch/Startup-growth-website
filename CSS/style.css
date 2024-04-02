@@ -95,13 +95,47 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
+.video-content a {
+  margin-top: 20px;
+}
 .video .video-preview {
   margin-bottom: 20px;
 }
 
 
+
+/*Testimonials*/
+.testimonials {
+  padding: 30px 10px;
+
+}
+
+.testimonials-heading {
+  color: var(--light-color);
+  width: 65%;
+}
+
+.cards {
+
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.card {
+  
+  background-color: var(--light-color);
+  color: var(--dark-colr);
+  padding: 15px;
+  margin: 20px;
+  border-radius: 10px;
+ overflow: auto;
+ text-align: center;
+  
+}
 
 /*Utility Classes*/
 .container {
